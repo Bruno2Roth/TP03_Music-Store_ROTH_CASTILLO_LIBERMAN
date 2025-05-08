@@ -15,6 +15,29 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Catálogo.InicializarCatálogo();
+
+        ViewBag.Catálogo = Catálogo.Discografía;
+
         return View();
     }
+
+    public IActionResult Particular(int id)
+    {
+        Dictionary<int, Album> c = Catálogo.Discografía;
+
+        if (c.ContainsKey(id))
+        {
+            Album a = c[id];
+            ViewBag.Album = a;
+            ViewBag.ID = id;
+        }
+        else
+        {
+            ViewBag.Album = null;
+        }
+
+        return View();
+    }
+
 }

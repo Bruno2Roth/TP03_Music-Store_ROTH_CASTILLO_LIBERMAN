@@ -1,8 +1,23 @@
 ﻿@{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Music Store";
+
 }
 
-<div>
-    <h1>Index</h1>
-    <p>Bienvenidos al sitio web de NombreProyecto</p>
-</div>
+<section>
+
+@if(ViewBag.Catálogo != null){
+
+    Dictionary<int, Album> mostrar = ViewBag.Catálogo;
+    foreach (int i in (mostrar).Keys){
+        <div>
+            <h1>@mostrar[i].título</h1>
+        
+            <a href='@Url.Action("Particular", "Home", new { id = i })'><img src="\imgs\@(i).jpg" alt=":)"></a>
+        </div>
+    }
+
+}
+    
+
+    
+</section>

@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = (ViewBag.Album).título;
+
+}
+
+    <div>
+        @if (ViewBag.Album != null)
+        {
+            Album modelo = ViewBag.Album;
+
+            <h1>@modelo.título</h1>
+            <h3>Autor/a: @modelo.autor</h3>
+            <h3>Género: @modelo.género</h3>
+            <h3>Productor: @modelo.productor</h3>
+            <img src="\imgs\@(ViewBag.ID).jpg" alt=":)">
+            <ol>
+                @foreach (Canción c in modelo.canciones)
+                {
+                    <li><a href="@(c.link)">@(c.título)</a></li>
+
+                }
+            </ol>
+
+        }
+    </div>
