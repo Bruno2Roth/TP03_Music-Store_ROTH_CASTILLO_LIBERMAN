@@ -1,71 +1,10 @@
-html {
-  font-size: 14px;
-  min-height: 100%;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-div img{
-  float: left;
-  width: 30%;
-  height: auto;
-  margin: 2%;
-}
-div li {
-  border: 1px, goldenrod, solid;
-  width: 60%;
-  float: right;
-  margin-right: 5%;
-}
-
-div A {
-  color: black;
-  text-decoration: none;
-}
-
-div h1,
-h3,
-h4 {
-  text-align: center;
-  margin-top: 0.1%;
-  margin-bottom: 0%;
-}
-
-body {
-  background-color: gold;
+*{
   margin: 0%;
   padding: 0%;
 }
-
-section div {
-
-  width: 40%;
-  height: auto;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 3%;
-  padding: 1%;
-  margin-top: 0%;
-  text-align: center;
-  float: left;
-  background-color: black;
+body{
+  background: gold;
 }
-
-
-section div h1 {
-  text-align: center;
-  margin: 0%;
-  color: #e9ecef;
-}
-
-section div img {
-  width: 99%;
-  height: auto;
-}
-
 header {
   margin: 0%;
   padding: 0%;
@@ -73,32 +12,87 @@ header {
   text-align: center;
   margin-bottom: 0.5%;
   overflow: auto;
-
 }
-
-footer {
-  margin: 0%;
-  padding: 0%;
-  width: 100%;
-  text-align: center;
-  border-top: 5px solid goldenrod;
-  margin-top: 0.5%;
-}
-
 header img {
-  width: 5%;
+  margin-left: 45%;
+  width: 10%;
   height: auto;
   float: left;
 }
+header h1{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 6%;
+}
+section div {
+  width: 40%;
+  height: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 3%;
+  padding: 1.5%;
+  margin-top: 0%;
+  text-align: center;
+  float: left;
+  background-color: black;
+}
 
-body {
-  margin: 10px;
-  padding: 10px;
+section div h1 {
+  text-align: center;
+  margin: 0%;
+  color: #e9ecef;
+}
+
+section div img{ /*PORTADA*/
+  margin: 5%;
+  margin-left: 5%;
+  width: 90%;
+  height: auto;
+} 
+
+div img{ /*PARTICULAR*/
+  float: left;
+  margin: 5%;
+  margin-left: 5%;
+  width: 30%;
+  height: auto;
+}
+
+div ol li {
+  float: right;
+  width: 30%;
+  border-bottom: 2px solid rgb(48, 41, 41);
+  margin-right: 25%;
+  margin-top: 0.5%;
+}
+
+div a {
+  color: black;
+  text-decoration: none;
+}
+
+div h1, h3,
+h4 {
+  text-align: center;
+  margin-top: 0.1%; 
+}
+div ol{
+  margin-top: 5%;
+}
+
+footer {
+  margin-top: 21%;
+  margin-bottom: 0.5%;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  border-top: 5px solid goldenrod;
+  clear: both;
 }
 
 
-footer {
-  background-color: gold;
-  border-top: 1px solid goldenrod;
-  clear: both;
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 }
