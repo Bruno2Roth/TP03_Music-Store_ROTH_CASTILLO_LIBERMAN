@@ -13,6 +13,10 @@
             <h1>@mostrar[i].título</h1>
         
             <a href='@Url.Action("Particular", "Home", new { id = i })'><img src="\imgs\@(i).jpg" alt=":)"></a>
+
+            <h5>Autor/a: @mostrar[i].autor</h5>
+            <h5>Género: @mostrar[i].género</h5>
+            <h5>Productor: @mostrar[i].productor</h5>
         </div>
     }
 
